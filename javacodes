@@ -1,0 +1,1317 @@
+THE FOLLOWING CODES ARE FRO EDUCATIONAL PURPOSE.
+
+  
+                                                                    JAVA
+
+
+# Program to define the structure of a basic Java program.
+
+Program1: Hello World Program:
+
+public class HelloWorld {
+    public static void main(String[] args) {
+    System.out.println("Hello, World!");
+    }
+}
+
+Program2:Addition
+
+public class Add {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter the first number
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        // Prompt the user to enter the second number
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        // Perform addition
+        int sum = num1 + num2;
+
+        // Display the result
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
+
+
+Program 3: Class with method
+
+public class SquareCalculator {
+public static void main(String[] args) {
+        // Create an instance of the SquareCalculator class
+        SquareCalculator calculator = new SquareCalculator();
+        
+        // Define the number
+        int number = 5; // You can change this value to any number you want to square
+        
+        // Calculate the square of the number using the method
+        int square = calculator.calculateSquare(number);
+        
+        // Display the result
+        System.out.println("The square of " + number + " is " + square);
+    }
+// Method to calculate the square of a number
+    public int calculateSquare(int number) {
+        return number * number;
+    }
+
+Program 4: Array example 
+public class ArrayLength {
+    public static void main(String[] args) {
+        // Define an array of integers
+        int[] numbers = {1, 2, 3, 4, 5};
+	System.out.println("Array elements are:");
+	for(int i=0;i<number.length;i++){
+system.out.println(number[i]);
+}}}
+
+Program 5: Class with constructor
+
+public class Person {
+    // Fields (or instance variables)
+    String name;
+    int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to display person information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        // Creating an object of the Person class
+        Person person1 = new Person("Alice", 20);
+
+        // Calling the method to display information
+        person1.displayInfo();
+    }
+}
+
+#Program to define data types, variables, and operators.
+
+Program 1: Data types and constructor
+  
+public class DataTypes {
+    public static void main(String[] args) {
+        // Declaring variables of different data types
+        int integerVar = 100;           // Integer data type
+        double doubleVar = 99.99;       // Double data type
+        char charVar = 'A';            // Character data type
+        boolean booleanVar = true;     // Boolean data type
+        String stringVar = "Hello World!";
+	System.out.println("Integer variable: " + integerVar);
+        System.out.println("Double variable: " + doubleVar);
+        System.out.println("Character variable: " + charVar);
+        System.out.println("Boolean variable: " + booleanVar);
+        System.out.println("String variable: " + stringVar);
+
+
+}}
+
+Program 2: Arithmetic Operators 
+
+public class ArithmeticOperators {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        // Arithmetic operations
+        int sum = a + b;
+        int difference = a-b;
+        int product = a * b;
+        double quotient = (double) a / b; // Cast to double for division
+        int remainder = a % b;
+
+        // Displaying the results
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+        System.out.println("Remainder: " + remainder);
+    }
+}
+
+Program 3: Relational Operators
+
+public class RelationalOperators {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        System.out.println("(a == b) " + (a == b));
+        System.out.println("(a != b) " + (a != b));
+        System.out.println("(a > b) " + (a > b));
+        System.out.println("(a < b) " + (a < b));
+        System.out.println("(a >= b) " + (a >= b));
+        System.out.println("(a <= b) " + (a <= b));
+    }
+}
+
+Program 4: Logical Operators
+
+public class LogicalOperators {
+    public static void main(String[] args) {
+        boolean x = true;
+        boolean y = false;
+
+        System.out.println("(x || y) " + (x || y));
+        System.out.println("(x || y)" + (x || y));
+        System.out.println(" !x" + (!x);
+    }
+}
+
+program 5: Assignment operator
+
+public class AssignmentOperatorExample {
+    public static void main(String[] args) {
+        
+	int a = 10;
+        int b = 5;
+
+
+        a+=b ;
+        System.out.println("a+=b: " + a);
+
+         a -= b ;
+        System.out.println(" a -= b: " + a);
+
+         a *=b;
+        System.out.println(" a *=b; " + a);
+
+        a /= b;
+        System.out.println("a /= b: " + a);
+
+        // Modulus AND assignment operator
+        a %= b;
+        System.out.println("a %= b: " + a);
+    }
+}
+
+# Program to define arrays, strings, and control structures. 
+
+Program 1: Array Declarization and Initialization
+
+
+public class ArrayExample {
+    public static void main(String[] args) {
+       
+        int[] numbers = {1, 2, 3, 4};
+
+        System.out.println("Array Elements");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Element at index " + i + ": " + numbers[i]);
+        }
+    }
+}
+
+Program 2: String Manipulation
+
+public class StringManipulation {
+    public static void main(String[] args) {
+        // Define first name and last name
+        String firstName = "John";
+        String lastName = "Doe";
+
+        // Concatenate first name and last name
+        String fullName = firstName + " " + lastName;
+        System.out.println("Full Name: " + fullName);
+	System.out.println("length of Full Name: " + fullName.length);
+	}
+}
+
+Program 3 : if else control statement
+
+public class IfElseExample {
+    public static void main(String[] args) {
+        int number = 10;
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+
+Program 4: Switch case control structure
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        char grade ='B; 
+
+             switch (grade) {
+            	case 'A':
+            	System.out.println("Excellent!");
+                break;
+          	case 'B':
+            	System.out.println("Good Job");
+                break;
+		case 'C':
+            	System.out.println("Better Try again");
+                break;
+		default:
+	        System.out.println("Invalid grade");
+		break;
+    }
+}
+
+
+Program 5: For loop with Array 
+
+public class ForLoopWithArray {
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banan","Dates","Mango"};
+        System.out.println("List of fruits:");
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println("Element at index " + i + ": " + fruits[i]);
+        }
+    }
+}
+
+
+
+#Program to define classes and constructors.
+
+Program 1: Basic Constructor
+
+ class Person {
+    String name;
+    //constructor
+    public Person(String name) {
+        this.name = name;
+       
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+           }
+
+    public static void main(String[] args) {
+        Person person = new Person("Alice");
+        person1.displayInfo();
+    }
+}
+
+
+Program 2:  Parameterized Constructor
+
+ class Car {
+    String model;
+    int year;
+
+    //  constructor
+    public Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    public void displayInfo() {
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+    }
+
+    public static void main(String[] args) {
+        Car car = new Car("Ferrari", 2018);
+        car.displayInfo();
+    }
+}
+
+Program 3: Default Constructors
+
+    class Book {
+    String title;
+    String author;
+
+    // Default constructor
+    public Book() {
+        title = "Book";
+        author = "aus";
+    }    
+    public void displayInfo() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+    }
+
+    public static void main(String[] args) {
+        Book book = new Book();
+        book.displayInfo();
+       
+    }
+}
+
+
+Program 4: Constructor Overloading
+ class Rectangle {
+    int length;
+    int width;
+
+    // Default constructor
+    public Rectangle() {
+        length = 0;
+        width = 0;
+    }
+
+    // Parameterized constructor
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    public int calculateArea() {
+        return length * width;
+    }
+
+    public static void main(String[] args) {
+        Rectangle rect1 = new Rectangle();
+        Rectangle rect2 = new Rectangle(5, 10);
+        rect1.displayInfo();
+        rect2.displayInfo();
+    }
+}
+
+Program5: Class with private fields and public methods in bankaccount
+
+public class BankAccount {
+    // Private fields
+    private String accountNumber;
+    private double balance;
+
+    // Constructor
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
+    
+        public void deposit(double amount) {
+		balance += amount;
+        }
+    
+
+       public void withdraw(double amount) {
+        if (balance>=amount) {
+            balance -= amount;
+          
+        } else {
+            System.out.println("Insufficient funds ");
+        }
+    }
+
+        public void displayAccountInfo() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance:$" + balance);
+    }
+
+    public static void main(String[] args) {
+        
+        BankAccount account = new BankAccount("1234", 10000.0);
+
+        account.displayAccountInfo();
+
+         }
+}
+
+
+
+#Program to define classes, methods, objects, and method overloading.  
+
+Program 1: Basic class with methods
+
+public class Person {
+    String name;
+    int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to display information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age + " years");
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("Allu", 32);
+        person.displayInfo();
+    }
+}
+
+Program 2: Class with multiple Methods
+
+ class Calculator {
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to subtract two integers
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public static void main(String[] args) {
+              Calculator calc = new Calculator();
+
+              System.out.println("Sum: " + calc.add(10,5);
+        	System.out.println("Difference: " + calc.subtract(10,5);
+    }
+}
+
+Program 3 : Class with overloaded methods
+
+
+ class MathOperations {
+    // Method to add three integers
+
+ public int add(int a, int b) {
+        return a + b ;
+}
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+     
+        MathOperations math = new MathOperations();
+
+               System.out.println("Sum of 2 number: " + math.add(5,10);
+        System.out.println("Sum of  3 number: " + math.add(5,10,15);
+       
+    }
+}
+
+Program 4 : Class with private fields and public fields methods
+
+public class BankAccount {
+    // Private fields
+    private String accountNumber;
+    private double balance;
+
+    // Constructor
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
+    
+        public void deposit(double amount) {
+		balance += amount;
+        }
+    
+
+       public void withdraw(double amount) {
+        if (balance>=amount) {
+            balance -= amount;
+          
+        } else {
+            System.out.println("Insufficient funds ");
+        }
+    }
+
+        public void displayAccountInfo() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance:$" + balance);
+    }
+
+    public static void main(String[] args) {
+        
+        BankAccount account = new BankAccount("12345", 10000.0);
+
+        account.displayAccountInfo();
+	account.deposit(500.0);
+	account.displayAccountInfo();
+	account.withdraw(200.0);
+	account.displayAccountInfo();
+         }
+}
+
+Program 5: Hierarchical Inheretance
+
+class shape{
+void draw(){
+System.out.println("Draeing shape.");
+	}
+}
+ class Rectangle extends shape{
+@Overirde
+void drae(){
+System.out.println("Drawing rectangle.");
+}
+}
+
+public class TestHierarchicalInheritance
+{
+    public static void main(String[] args) {
+        
+        Circle circle = new Circle(5);
+        circle.draw();
+
+                Rectangle rectangle = new Rectangle();
+        rectangle.draw();
+    }
+}
+
+
+# Program to define inheritance and show method overriding.  
+
+Program 1: Simple inheritance
+
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class TestInheritance {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.bark();
+    }
+}
+
+
+
+Program 2: Inheritance with method overriding
+
+class Animal {
+    void makeSound() {
+        System.out.println("This animal makes a sound.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class TestMethodOverriding {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.makeSound();
+    }
+}
+
+
+
+
+Program 3: Inhereitance with Mehod overrong and super keyword
+
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle is starting.");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    void start() {
+        super.start(); // Call superclass method
+        System.out.println("Car is starting.");
+    }
+}
+
+public class TestSuper {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.start();
+    }
+}
+
+
+Program 4: Multilevel Inheritance
+
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("The puppy weeps.");
+    }
+}
+
+public class TestMultilevelInheritance {
+    public static void main(String[] args) {
+        Puppy puppy = new Puppy();
+        puppy.eat();
+        puppy.bark();
+        puppy.weep();
+    }
+}
+
+
+Program 5: Class with Method Overrinding and overriding
+
+class Shape {
+    // Method to calculate area (default implementation)
+    public double area() {
+        return 0;
+    }
+
+    // Overloaded method for the area of a rectangle
+    public double area(double length, double width) {
+        return length * width;
+    }
+}
+
+class Circle extends Shape {
+    double radius;
+
+    // Constructor
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    // Overriding method to calculate the area of a circle
+    @Override
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class TestShape {
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+        System.out.println("Area of rectangle: " + shape.area(5, 10));
+
+        Circle circle = new Circle(7);
+        System.out.println("Area of circle: " + circle.area());
+    }
+}  
+
+
+
+
+# Program to demonstrate Packages.
+
+  
+Program 1: mypackage
+
+File: mypackage/HelloWorld.java
+package mypackage;
+
+public class HelloWorld {
+    public void displayMessage() {
+        System.out.println("Hello, World from mypackage!");
+    }
+}
+
+
+File: Main.java
+
+import mypackage.HelloWorld;
+
+public class Main {
+    public static void main(String[] args) {
+        HelloWorld hello = new HelloWorld();
+        hello.displayMessage();
+    }
+}
+
+
+Program2: Package with Multiple Classes
+
+File: mathoperations/Addition.java
+package mathoperations;
+
+public class Addition {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+File: matheoperations/Subtraction.java
+package mathoperations;
+
+public class Subtraction {
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+
+
+File: Main.java
+import mathoperations.Addition;
+import mathoperations.Subtraction;
+
+public class Main {
+    public static void main(String[] args) {
+        Addition addition = new Addition();
+        Subtraction subtraction = new Subtraction();
+        
+        System.out.println("Sum: " + addition.add(10, 5));
+        System.out.println("Difference: " + subtraction.subtract(10, 5));
+    }
+}
+
+Program 3: Using Package from a Subpackage 
+
+File: shapes/Shape.java
+package shapes;
+
+public class Shape {
+    public void draw() {
+        System.out.println("Drawing a shape.");
+    }
+}
+
+
+File: shapes/circle/Circle.java
+package shapes.circle;
+
+import shapes.Shape;
+
+public class Circle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle.");
+    }
+}
+
+
+File: Main.java
+import shapes.circle.Circle;
+
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.draw();
+    }
+}
+
+
+File: vehicle/Vehicle.java
+package vehicles;
+
+public interface Vehicle {
+    void start();
+    void stop();
+}
+
+
+File:cehicles/Car.java
+package vehicles;
+
+public class Car implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Car is starting.");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Car is stopping.");
+    }
+}
+
+
+File: Main.java
+import vehicles.Car;
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.start();
+        car.stop();
+    }
+}
+
+Program 5: Organizing a Large Project with Prackages
+
+File: project/user/User.java
+package project.users;
+
+public class User {
+    private String username;
+
+    public User(String username) {
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+}
+
+File: project/auth/Authentication.java
+package project.auth;
+
+import project.users.User;
+
+public class Authentication {
+    public boolean login(User user, String password) {
+        // Simple authentication logic (example only)
+        return "123".equals(password);
+    }
+}
+
+
+
+File: Main.java
+import project.users.User;
+import project.auth.Authentication;
+
+public class Main {
+    public static void main(String[] args) {
+        User user = new User("John_doe");
+        Authentication auth = new Authentication();
+
+        if (auth.login(user, "123")) {
+            System.out.println(user.getUsername() + " has logged in successfully!");
+        } else {
+            System.out.println("Login failed!");
+        }
+    }
+}
+
+#Program to demonstrate Exception Handling.  
+
+Program 1: Basic Try-Catch Block
+
+public class BasicExceptionHandling {
+    public static void main(String[] args) {
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b; // This will throw ArithmeticException
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+    }
+}
+
+
+
+Program 2: Multiple Catch Blocks
+
+public class MultipleExceptionHandling {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {1, 2, 3};
+            System.out.println("Element at index 3: " + numbers[3]); 
+            // This will throw ArrayIndexOutOfBoundsException
+
+            int result = numbers[1] / 0; 
+            // This will throw ArithmeticException
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Array index is out of bounds.");
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+    }
+}
+
+Program 3: Finally Block
+
+public class FinallyBlockExample {
+    public static void main(String[] args) {
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b; // This will throw ArithmeticException
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        } finally {
+            System.out.println("This will always be executed.");
+        }
+    }
+}
+
+
+Program 4: Exception Propagartion
+
+public class ExceptionPropagation {
+    public static void main(String[] args) {
+        try {
+            method1();
+        } catch (ArithmeticException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+
+    public static void method1() {
+        method2();
+    }
+
+    public static void method2() {
+        int a = 10;
+        int b = 0;
+        int result = a / b; // This will throw ArithmeticException
+        System.out.println("Result: " + result);
+    }
+}
+
+Program 5: Throwing Exceptions
+
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+public class ThrowCustomException {
+    public static void main(String[] args) {
+        try {
+            checkAge(15); // This will throw CustomException
+        } catch (CustomException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+
+    public static void checkAge(int age) throws CustomException {
+        if (age < 18) {
+            throw new CustomException("Age must be at least 18.");
+        }
+    }
+}
+
+#Program to demonstrate Multithreading.  
+
+Program 1: Creating a Thread by Extending the Thread class
+
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread is running.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread thread = new MyThread();
+        thread.start();
+    }
+}
+
+
+Program 2: Creating a Thread by Implementing thw Runnable Interface
+
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread is running.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Thread thread = new Thread(new MyRunnable());
+        thread.start();
+    }
+}
+
+
+Program 3: Thread Sleep Method
+
+class SleepDemo extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            try {
+                Thread.sleep(1000); // Sleep for 1 second
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+            System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        SleepDemo thread = new SleepDemo();
+        thread.start();
+    }
+}
+
+
+Program 4: Thread Synchronization
+
+class Counter {
+    private int count = 0;
+
+    public synchronized void increment() {
+        count++;
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+
+class SyncDemo extends Thread {
+    private Counter counter;
+
+    public SyncDemo(Counter counter) {
+        this.counter = counter;
+    }
+
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            counter.increment();
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        Counter counter = new Counter();
+
+        SyncDemo thread1 = new SyncDemo(counter);
+        SyncDemo thread2 = new SyncDemo(counter);
+
+        thread1.start();
+        thread2.start();
+
+        thread1.join();
+        thread2.join();
+
+        System.out.println("Count: " + counter.getCount());
+    }
+}
+
+
+
+Program 5: Using Thread Join Method
+
+class JoinDemo extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            try {
+                Thread.sleep(1000); // Sleep for 1 second
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+            System.out.println(i);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        JoinDemo thread1 = new JoinDemo();
+        JoinDemo thread2 = new JoinDemo();
+        JoinDemo thread3 = new JoinDemo();
+
+        thread1.start();
+        try {
+            thread1.join(); // Waits for thread1 to finish
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        thread2.start();
+        thread3.start();
+    }
+}
+
+#Program to demonstrate I/O operations, JDBC, and JavaFX.  
+
+Program 1: File I/O operations
+
+import java.io.*;
+
+public class FileIOExample {
+    public static void main(String[] args) {
+        String filePath = "example.txt";
+        String content = "Hello, World!";
+
+        // Writing to a file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(content);
+            System.out.println("Content written to file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred while writing to the file.");
+            e.printStackTrace();
+        }
+
+        // Reading from a file
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println("Content read from file: " + line);
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading from the file.");
+            e.printStackTrace();
+        }
+    }
+}
+
+
+Program 2: Basic JDBC Operations
+
+import java.sql.*;
+
+public class JDBCDemo {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String username = "root";
+        String password = "password";
+
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connected to the database.");
+
+            String query = "SELECT * FROM users";
+            try (Statement statement = connection.createStatement()) {
+                ResultSet resultSet = statement.executeQuery(query);
+
+                while (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    System.out.println("ID: " + id + ", Name: " + name);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("An error occurred while connecting to the database.");
+            e.printStackTrace();
+        }
+    }
+}
+
+Progarm 3: JDBC Insert Operation
+
+import java.sql.*;
+
+public class JDBCInsertDemo {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String username = "root";
+        String password = "password";
+
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connected to the database.");
+
+            String insertQuery = "INSERT INTO users (name) VALUES (?)";
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+                preparedStatement.setString(1, "John Doe");
+
+                int rowsInserted = preparedStatement.executeUpdate();
+                if (rowsInserted > 0) {
+                    System.out.println("A new user was inserted successfully!");
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("An error occurred while inserting data into the database.");
+            e.printStackTrace();
+        }
+    }
+}
+
+Program 4: Simple JavaFX Application 
+
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class SimpleJavaFXApp extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        Label label = new Label("Hello JavaFX!");
+        Button button = new Button("Click Me");
+
+        button.setOnAction(e -> label.setText("Button Clicked!"));
+
+        VBox root = new VBox(10, label, button);
+        Scene scene = new Scene(root, 300, 200);
+
+        primaryStage.setTitle("Simple JavaFX Application");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+
+
+
+
+
+Progra 5: JavaFX with Database Connection
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JavaFXJDBCDemo extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        VBox root = new VBox(10);
+        Scene scene = new Scene(root, 400, 300);
+
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String username = "root";
+        String password = "password";
+
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connected to the database!");
+
+            String query = "SELECT * FROM users";
+            try (Statement statement = connection.createStatement();
+                 ResultSet resultSet = statement.executeQuery(query)) {
+
+                while (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    Label label = new Label("ID: " + id + ", Name: " + name);
+                    root.getChildren().add(label);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("An error occurred while connecting to the database.");
+            e.printStackTrace();
+        }
+
+        primaryStage.setTitle("JavaFX with Database Connection");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}  
